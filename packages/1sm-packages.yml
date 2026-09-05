@@ -1,0 +1,54 @@
+generated: '2026-09-05'
+method: searched
+source: >-
+  registry.npmjs.org, pypi.org, rubygems.org, crates.io, github.com/1smHQ
+name: 1sm client packages
+description: >-
+  Registry search for first-party 1sm client libraries or SDKs. NONE FOUND. Recorded as an
+  honest zero, not an unchecked field. No SDKs or Packages pointer is emitted from this file.
+
+package_count: 0
+packages: []
+
+registries_searched:
+  - registry: npm
+    query: https://registry.npmjs.org/-/v1/search?text=1sm
+    status: 200
+    first_party_matches: 0
+    version: null
+    published: null
+    note: >-
+      Only unrelated third-party packages match the string. No @1sm / 1sm-* namespace exists.
+  - registry: pypi
+    query: https://pypi.org/pypi/1sm/json
+    status: 404
+    first_party_matches: 0
+    version: null
+    published: null
+  - registry: rubygems
+    query: https://rubygems.org/api/v1/gems/1sm.json
+    status: 404
+    first_party_matches: 0
+    version: null
+    published: null
+  - registry: crates.io
+    query: https://crates.io/api/v1/crates/1sm
+    status: 403
+    first_party_matches: 0
+    version: null
+    published: null
+    note: crates.io refused the unauthenticated user agent; no evidence of a crate either way.
+  - registry: github
+    query: https://api.github.com/orgs/1smHQ/repos
+    status: 200
+    first_party_matches: 0
+    version: null
+    published: null
+    note: >-
+      github.com/1smHQ is the company's real GitHub organization (description "RevOps analytics
+      platform", blog https://1sm.io, created 2020-05-22) but publishes ZERO public repositories.
+      Org record last updated 2022-12-16.
+
+x-finding: >-
+  1sm shipped no client library on any public registry and no public source. There is therefore
+  no SDK decay signal to read — the company never published a first release to abandon.

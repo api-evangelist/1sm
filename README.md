@@ -64,5 +64,14 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-1sm is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+1sm was a New York City revenue-operations (RevOps) analytics startup founded in 2020 by James Weitzman, Chris Lonardo and Jordan Josloff. It raised a $375K pre-seed round announced in July 2020 while in the Techstars NYC 2020 accelerator class, and pitched itself as the first no-code RevOps analytics platform — integrating a company's existing sales and marketing tools into one unified view of buyer personas and ideal customer profiles, with forward-looking analytics predicting which messaging would drive clicks, meetings and closed deals. The product never advanced past a public beta waitlist and no public API, SDK, webhook surface or developer program was ever shipped. As of September 2026 the company's former domain, 1sm.io, is registered to a third party — Nocode ltd of Paphos, Cyprus, the entity behind the Latenode automation platform — which republishes the archived July 2020 marketing page with injected affiliate copy and a "Contact the Domain Owner" footer, so that host is deliberately NOT wired as this company's Website pointer.
+
+## Coverage
+
+**none / defunct** — 1sm's product never left the beta waitlist stage and its former domain 1sm.io now answers from a third party — WHOIS registrant "Nocode ltd" (Paphos, CY) — serving the archived 2020 marketing page (Last-Modified 2020-07-14) with injected Latenode affiliate copy and a "Contact the Domain Owner" footer, while its GitHub org 1smHQ holds zero public repositories and no api/docs/developer subdomain resolves.
+
+No machine-readable contract (OpenAPI, GraphQL SDL, AsyncAPI, MCP, Protobuf, WSDL, OGC) is published for 1sm on any reachable host. See `well-known/1sm-well-known.yml` for the full probe record and `packages/1sm-packages.yml` for the registry search.
+
+## Links
+
+- GitHub organization: https://github.com/1smHQ (0 public repositories)

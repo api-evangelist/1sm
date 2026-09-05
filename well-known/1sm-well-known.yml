@@ -1,0 +1,106 @@
+generated: '2026-09-05'
+method: probed
+source: https://1sm.io/.well-known/
+name: 1sm well-known discovery probe
+description: >-
+  Result of probing the RFC 8615 /.well-known/ namespace and the common contract-discovery
+  paths for 1sm. Every path answered HTTP 200 with the SAME client-rendered HTML shell
+  (Next.js catch-all), not a document — a soft-200, which this pipeline records as a MISS.
+  No WellKnown or SecurityTxt pointer is emitted from this file.
+
+x-ownership-caveat: >-
+  IMPORTANT — 1sm.io is no longer operated by 1sm. WHOIS lists the registrant organization as
+  "Nocode ltd" (Paphos, CY), the corporate entity behind the Latenode no-code automation
+  platform, and the served page is the company's archived July 2020 marketing site
+  (Last-Modified: Tue, 14 Jul 2020 13:28:37 GMT) with third-party affiliate copy injected into
+  the waitlist section linking to https://latenode.com/alternatives, and a footer reading
+  "Contact the Domain Owner". These probe results therefore describe a host a THIRD PARTY
+  controls; nothing found here may be credited to 1sm as a published artifact.
+
+hosts:
+  - host: 1sm.io
+    note: >-
+      Former 1sm domain, now registered to Nocode ltd (CY). Serves a Next.js SPA that answers
+      200 with the same HTML shell for every path, including paths that do not exist.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: HTML shell, not an RFC 9116 document. Treated as absent.
+      - path: /.well-known/openid-configuration
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: HTML shell, not JSON. Treated as absent.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: HTML shell, not JSON. Treated as absent.
+      - path: /.well-known/api-catalog
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: HTML shell, not an RFC 9727 catalog. Treated as absent.
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: HTML shell, not JSON. Treated as absent.
+      - path: /.well-known/agent-card.json
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: >-
+          HTML shell, NOT an A2A AgentCard. Rejected per the pipeline rule that an SPA
+          catch-all answering 200 for every /.well-known/* path is the dominant false
+          positive on this probe. No a2a/ artifact written.
+      - path: /.well-known/agent.json
+        status: 200
+        soft_404: true
+        content_type: text/html; charset=utf-8
+        file: null
+        note: HTML shell, not a legacy AgentCard. Treated as absent.
+
+x-contract-discovery:
+  note: >-
+    STEP 0b contract discovery. No apis[] entry, no baseURL and no OpenAPI servers[] host exists
+    for this record, so the only reachable candidate host was the former primary domain.
+  hosts_probed:
+    - host: 1sm.io
+      resolves: true
+      paths:
+        - { path: /openapi.json, status: 200, parses_as_spec: false, note: HTML shell }
+        - { path: /swagger.json, status: 200, parses_as_spec: false, note: HTML shell }
+        - { path: /api-docs,     status: 200, parses_as_spec: false, note: HTML shell }
+        - { path: /docs,         status: 200, parses_as_spec: false, note: HTML shell }
+        - { path: /llms.txt,     status: 200, parses_as_spec: false, note: HTML shell }
+  hosts_unresolvable:
+    - { host: api.1sm.io, dns: NXDOMAIN }
+    - { host: app.1sm.io, dns: NXDOMAIN }
+    - { host: docs.1sm.io, dns: NXDOMAIN }
+    - { host: developer.1sm.io, dns: NXDOMAIN }
+    - { host: developers.1sm.io, dns: NXDOMAIN }
+    - { host: status.1sm.io, dns: NXDOMAIN }
+  graphql: not-attempted (no /graphql surface named by any documentation or host)
+  mcp: not-attempted (no MCP endpoint named by any documentation or host)
+  ogc: not-applicable (no evidence points at an OGC surface)
+  wsdl: not-attempted (no SOAP surface named by any documentation or host)
+  verdict: >-
+    No machine-readable contract of any kind (OpenAPI, Swagger, GraphQL SDL, AsyncAPI, MCP,
+    Protobuf, WSDL, OGC) is published for 1sm on any reachable host.
+
+x-not-this-company:
+  - host: 1sm.app
+    status: 200
+    is: >-
+      "1 Source Medicine" — an MCAT test-prep tutoring and question-bank product. It abbreviates
+      to 1SM and serves a /images/1sm-logo-horizontal-dark.svg, but it is an unrelated company.
+      Recorded here so a later round does not mistake it for this provider (STEP 0c).

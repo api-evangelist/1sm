@@ -1,17 +1,34 @@
 aid: 1sm
 name: 1sm
-description: '1sm is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  1sm was a New York City revenue-operations (RevOps) analytics startup founded in 2020 by James
+  Weitzman, Chris Lonardo and Jordan Josloff. It raised a $375K pre-seed round announced in July
+  2020 while in the Techstars NYC 2020 accelerator class, and pitched itself as the first no-code
+  RevOps analytics platform — integrating a company's existing sales and marketing tools into one
+  unified view of buyer personas and ideal customer profiles, with forward-looking analytics
+  predicting which messaging would drive clicks, meetings and closed deals. The product never
+  advanced past a public beta waitlist and no public API, SDK, webhook surface or developer
+  program was ever shipped. As of September 2026 the company's former domain, 1sm.io, is
+  registered to a third party — Nocode ltd of Paphos, Cyprus, the entity behind the Latenode
+  automation platform — which republishes the archived July 2020 marketing page with injected
+  affiliate copy and a "Contact the Domain Owner" footer, so that host is deliberately NOT wired
+  as this company's Website pointer.
 url: https://raw.githubusercontent.com/api-evangelist/1sm/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
+x-status: defunct
+x-status-detail: Wound down; no first-party site resolves. No Website registered on purpose.
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Analytics
+- Revenue Operations
+- Sales
+- Marketing
+- Business Intelligence
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,42 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://www.nasdaqprivatemarket.com/
+- type: GitHubOrganization
+  url: https://github.com/1smHQ
+x-website:
+  status: not-wired
+  former_domain: https://1sm.io
+  former_domain_status: 200
+  reason: >-
+    No Website pointer is emitted. The harvest stub carried https://www.nasdaqprivatemarket.com/,
+    which is the SECONDARY-MARKET VENUE the company was surfaced from and not 1sm's own web
+    presence (roadmap#56, venue-listing-as-website); it has been removed. The company's former
+    domain 1sm.io returns HTTP 200 but is registered to Nocode ltd (CY) and serves third-party
+    affiliate content over an archived 2020 snapshot, so wiring it would assert a web presence
+    the company no longer controls.
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    1sm's product never left the beta waitlist stage and its former domain 1sm.io now answers
+    from a third party — WHOIS registrant "Nocode ltd" (Paphos, CY) — serving the archived
+    2020 marketing page (Last-Modified 2020-07-14) with injected Latenode affiliate copy and a
+    "Contact the Domain Owner" footer, while its GitHub org 1smHQ holds zero public repositories
+    and no api/docs/developer subdomain resolves.
+  evidence:
+  - url: https://1sm.io/
+    status: 200
+  - url: https://1sm.io/openapi.json
+    status: 200
+  - url: https://1sm.io/.well-known/agent-card.json
+    status: 200
+  - url: https://api.github.com/orgs/1smHQ/repos
+    status: 200
+  - url: https://pypi.org/pypi/1sm/json
+    status: 404
+  checked: '2026-09-05'
