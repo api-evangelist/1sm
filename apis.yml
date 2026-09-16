@@ -18,7 +18,7 @@ specificationVersion: '0.20'
 x-status: defunct
 x-status-detail: Wound down; no first-party site resolves. No Website registered on purpose.
 created: '2026-09-05'
-modified: '2026-09-15'
+modified: '2026-09-16'
 tags:
 - Company
 - Analytics
@@ -27,6 +27,7 @@ tags:
 - Marketing
 - Business Intelligence
 - Software-as-a-Service
+- Defunct
 tags_raw:
 - Company
 - Analytics
@@ -35,6 +36,7 @@ tags_raw:
 - Marketing
 - Business Intelligence
 - SaaS
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
