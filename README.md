@@ -64,14 +64,34 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
+
 1sm was a New York City revenue-operations (RevOps) analytics startup founded in 2020 by James Weitzman, Chris Lonardo and Jordan Josloff. It raised a $375K pre-seed round announced in July 2020 while in the Techstars NYC 2020 accelerator class, and pitched itself as the first no-code RevOps analytics platform — integrating a company's existing sales and marketing tools into one unified view of buyer personas and ideal customer profiles, with forward-looking analytics predicting which messaging would drive clicks, meetings and closed deals. The product never advanced past a public beta waitlist and no public API, SDK, webhook surface or developer program was ever shipped. As of September 2026 the company's former domain, 1sm.io, is registered to a third party — Nocode ltd of Paphos, Cyprus, the entity behind the Latenode automation platform — which republishes the archived July 2020 marketing page with injected affiliate copy and a "Contact the Domain Owner" footer, so that host is deliberately NOT wired as this company's Website pointer.
 
-## Coverage
+**Areas:** Company · Analytics · Revenue Operations · Sales · Marketing · Business Intelligence · Software-as-a-Service · Defunct
 
-**none / defunct** — 1sm's product never left the beta waitlist stage and its former domain 1sm.io now answers from a third party — WHOIS registrant "Nocode ltd" (Paphos, CY) — serving the archived 2020 marketing page (Last-Modified 2020-07-14) with injected Latenode affiliate copy and a "Contact the Domain Owner" footer, while its GitHub org 1smHQ holds zero public repositories and no api/docs/developer subdomain resolves.
+## 1sm on APIs.io (historical record)
 
-No machine-readable contract (OpenAPI, GraphQL SDL, AsyncAPI, MCP, Protobuf, WSDL, OGC) is published for 1sm on any reachable host. See `well-known/1sm-well-known.yml` for the full probe record and `packages/1sm-packages.yml` for the registry search.
+Everything profiled for 1sm is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/1sm/](https://apis.io/providers/1sm/)** — or go straight to one of the APIs or properties below.
 
-## Links
+## Where to find this API
 
-- GitHub organization: https://github.com/1smHQ (0 public repositories)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [GitHub](https://github.com/1smHQ)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 1sm: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/1sm/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
